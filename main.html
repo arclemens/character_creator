@@ -1,0 +1,141 @@
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<title>Skyrim Character Generator</title>
+</head>
+<body>
+	<!-- Clusters of headings + two buttons + input/display -->
+	<div id="nameContainer">
+		<section class="buttons">
+			<button type="button" name="lock"> <!-- insert lock icon in value --> </button> <br>
+			<button type="button" name="roll"> <!-- insert dice icon in value --> </button>
+		</section>
+		<section class="label">
+			<h1>Name</h1><sup>?</sup><br>
+		</section>
+		<section class="tooltip">
+			<p>This is information on the Name section</p>
+		</section>
+		<section class="output">
+			<input type="text" name="charName" value="" readonly>
+		</section>
+	</div>
+	<div id="sexContainer">
+		<section class="buttons">
+			<button type="button" name="lock" value=""> <!-- insert lock icon in value --> </button> <br>
+			<button type="button" name="roll"> <!-- insert dice icon in value --> </button>
+		</section>
+		<section class="label">
+			<h1>Gender</h1><sup>?</sup><br>
+		</section>
+		<section class="tooltip">
+			<p>This is information on the Gender section</p><br>
+		</section>
+		<section class="output">
+			<input type="radio" name="sex" id="female" value="female">
+			<label for="female">Female</label><br>
+			<input type="radio" name="sex" id="male" value="male">
+			<label for="male">Male</label><br>
+		</section>
+	</div>	
+	<div id="raceContainer">
+		<section class="buttons">
+				<button type="button" name="lock"> <!-- insert lock icon in value --> </button> <br>
+				<button type="button" name="roll"> <!-- insert dice icon in value --> </button>
+		</section>
+		<section class="label">
+			<h1>Race</h1><sup>?</sup><br>
+		</section>
+		<section class="tooltip">
+			<p>This is information on the Race section</p>
+		</section>
+		<section class="output">
+			<div id="column1">
+				<input type="radio" name="race" id="altmer" value="altmer" >
+				<label for="Altmer">Altmer</label><br>
+				<input type="radio" name="race" id="altmer" value="dunmer" >
+				<label for="Dunmer">Dunmer</label><br>
+				<input type="radio" name="race" id="bosmer" value="bosmer" >
+				<label for="Bosmer">Bosmer</label><br>
+				<input type="radio" name="race" id="orsimer" value="orsimer" >
+				<label for="Orsimer">Orsimer</label><br>
+				<input type="radio" name="race" id="argonian" value="argonian" >
+				<label for="Argonian">Argonian</label>
+			</div>
+			<div id="column2">
+				<input type="radio" name="race" id="khajiit" value="khajiit" >
+				<label for="Khajiit">Khajiit</label><br>
+				<input type="radio" name="race" id="imperial" value="imperial" >
+				<label for="Imperial">Imperial</label><br>
+				<input type="radio" name="race" id="breton" value="breton" >
+				<label for="Breton">Breton</label><br>
+				<input type="radio" name="race" id="nord" value="nord" >
+				<label for="Nord">Nord</label><br>
+				<input type="radio" name="race" id="redguard" value="redguard" >
+				<label for="Redguard">Redguard</label><br>
+			</div>
+		</section>
+	</div>	
+	<div id="classContainer">
+		<section class="buttons">
+			<button type="button" name="lock"> <!-- insert lock icon in value --> </button> <br>
+			<button type="button" name="roll"> <!-- insert dice icon in value --> </button>
+		</section>
+		<section class="label">
+			<h1>Class</h1><sup>?</sup><br>
+		</section>
+		<section class="tooltip">
+			<p>This is information on the Class section</p>
+		</section>
+		<section class="output">
+			<input type="text" name="class" value="" readonly>
+		</section>
+		<section id="buttonContainer">
+			<button type="button" name="enableSkills" value="enable"></button>
+		</section>
+	</div>
+	<div id="majorContainer">
+		<section class="buttons">
+			<button type="button" name="lock"> <!-- insert lock icon in value --> </button> <br>
+			<button type="button" name="roll"> <!-- insert dice icon in value --> </button>
+		</section>
+		<section class="label">
+			<h2>Major</h2><sup>?</sup><br>
+		</section>
+		<section class="tooltip">
+			<p>This is information on the Major section</p>
+		</section>
+		<section class="output">
+			<input type="checkbox" name="major1" id="major1">
+			<label for="major1"></label><br>
+			<input type="checkbox" name="major2" id="major2">
+			<label for="major2"></label><br>
+			<input type="checkbox" name="major3" >
+			<label for="major3"></label><br>
+		</section>
+	</div>
+	<div id="minorContainer">
+		<section class="buttons">
+			<button type="button" name="lock"> <!-- insert lock icon in value --> </button> <br>
+			<button type="button" name="roll"> <!-- insert dice icon in value --> </button>
+		</section>
+		<section class="label">
+			<h2>Minor</h2><sup>?</sup><br>
+		</section>
+		<section class="tooltip">
+			<p>This is information on the Minor section</p>
+		</section>
+		<section class="output">
+			<input type="checkbox" name="major1" >
+			<label for="major1"></label><br>
+			<input type="checkbox" name="major2" >
+			<label for="major2"></label><br>
+			<input type="checkbox" name="major3" >
+			<label for="major3"></label><br>
+		</section>
+	</div>
+	<div id="finalContainer">
+		<button type="button" name="random" value="Random"></button>
+	</div>
+</body>
+</html>

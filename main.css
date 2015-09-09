@@ -1,0 +1,150 @@
+/* Page Layout */
+
+* {
+	background-color: rgba(181,174,134,.75);
+}
+
+body {
+	margin: 0 auto;
+	width: 60%;
+	border: solid 3px #525252;
+	border-radius: 5%;
+}
+
+#nameContainer,
+#classContainer,
+#sexContainer,
+#raceContainer,
+#classContainer,
+#majorContainer,
+#minorContainer {
+	margin: 5% 10%;
+	padding: 1em;
+}
+
+section.output {
+	margin: 10px 0 0 20px;
+}
+
+section.buttons {
+	float: left;
+}
+
+section.buttons button {
+	width: 15px;
+	height: 15px;
+	margin: 0 5px 5px 0;
+
+}
+
+section.label {
+	float: left;
+}
+
+/* Enable Skills Button Styles */
+
+#buttonContainer {
+	position: relative;
+	left: 45%;
+	width: 50px;
+	margin: 15px 0px 5px 0;
+}
+
+#buttonContainer button {
+	width: 75px;
+	height: 35px;
+}
+
+/* Random Button Styles */
+
+#finalContainer {
+	position: relative;
+	left: 43%;
+	width: 50px;
+	margin: 15px 0 35px 0;
+}
+
+button[value="Random"] {
+	width: 125px;
+	height: 55px;
+}
+
+/* Text Layout */
+
+h1 {
+	font-size: 2em;
+
+}
+
+h2 {
+	font-size: 1.75em;
+
+}
+
+sup {
+	vertical-align: top;
+	font-size: .5em;
+}
+
+h1,
+h2, 
+sup {
+	border-bottom: dotted 1px #525252;
+	display: inline;
+}
+
+
+/* Input Styles */
+
+input[type="text"] {
+	width: 94%;
+	padding: 5px;
+	margin: 1em;
+}
+
+input[type="radio"] {
+	margin: 6px;
+}
+
+#column1 {
+	float: left;
+	margin: 0 35% 0 17%;
+}
+
+#sexContainer section.output {
+	margin-left: 19%;
+}
+
+
+
+/* Hover Styles */
+
+sup:hover section.tooltip{
+	pointer-events: auto;
+	
+}
+
+
+
+/* Tooltip Styles */
+
+section.tooltip {
+	text-align: right;
+	font-style: italic;
+	height: 30px;
+	margin-bottom: 20px;
+	pointer-events: none;
+	 -webkit-transition: all .25s ease-out;
+		-moz-transition: all .25s ease-out;
+		 -ms-transition: all .25s ease-out;
+		  -o-transition: all .25s ease-out;
+			 transition: all .25s ease-out;
+}
+
+section.tooltip p {
+	margin-left: 200px;
+	background-color: rgba(54,54,54,75);
+	color: #DBD8C5;
+	font-size: 1.125em;
+	padding: 3px;
+}
